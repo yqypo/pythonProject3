@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>姓名</th>
+        <th>年龄</th>
+
+    </tr>
+    </thead>
+    <tbody id="body">
+    <tr>
+        <td>1</td>
+        <td>郭志</td>
+        <td>19</td>
+    </tr>
+
+    </tbody>
+</table>
+
+<script type="text/javascript">
+    var info = {id: 1, name: "郭志", age: 19};
+    var tr=document.createElement("tr");
+    for(var key in info){
+        var text=info[key];
+    }
+
+</script>
+
+
+</body>
+</html>

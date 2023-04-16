@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span id="txt">欢迎中国联通领导高倩莅临指导</span>
+<script type="text/javascript">
+    function show() {
+        var tag = document.getElementById("txt");
+        var dataString = tag.innerText;
+        var firstChar = dataString[0];
+        var otherChar = dataString.substring(1, dataString.length);
+        var newText = otherChar + firstChar;
+        tag.innerText = newText;
+    }
+    //定时器：每1s执行一次
+setInterval(show,1000);
+
+</script>
+
+</body>
+</html>
